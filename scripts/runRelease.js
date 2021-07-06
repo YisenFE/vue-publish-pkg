@@ -149,6 +149,7 @@ async function publishPackage(pkgName, version, runIfNotDry) {
                 'npm',
                 'publish',
                 ...(releaseTag ? ['--tag', releaseTag] : []),
+                ...['--access', 'public'],
             ],
             {
                 cwd: pkgRoot,
