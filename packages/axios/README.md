@@ -16,7 +16,6 @@ main.js:
 import Vue from 'vue';
 import { request } from '@ys/axios';
 Vue.prototype.$axios = request;
-Vue.prototype.$bffAxios = request;
 ```
 
 ## Custom

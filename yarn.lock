@@ -936,6 +936,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ys/v-click-outside@workspace:packages/v-click-outside":
+  version: 0.0.0-use.local
+  resolution: "@ys/v-click-outside@workspace:packages/v-click-outside"
+  languageName: unknown
+  linkType: soft
+
 "JSONStream@npm:^1.0.4":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"

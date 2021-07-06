@@ -1,0 +1,12 @@
+{
+  "name": "@ys/v-click-outside",
+  "version": "0.0.0-alpha.0",
+  "description": "@ys/v-click-outside",
+  "main": "index.js",
+  "keywords": [
+    "v-click-outside",
+    "click-outside"
+  ],
+  "author": "shiyisen",
+  "license": "MIT"
+}
