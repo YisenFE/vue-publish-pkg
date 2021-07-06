@@ -2,7 +2,7 @@
   "name": "vue-publish-pkg",
   "private": true,
   "version": "0.0.0-alpha.0",
-  "description": "爱番番业务组件包",
+  "description": "用于发布vue相关的npm包",
   "workspaces": [
     "packages/*"
   ],
