@@ -1,0 +1,33 @@
+{
+  "name": "@ys/axios",
+  "version": "0.0.0-alpha.0",
+  "description": "@ys/axios",
+  "main": "index.js",
+  "keywords": [
+    "axios"
+  ],
+  "author": "shiyisen",
+  "license": "MIT",
+  "buildOptions": {
+    "externals": {
+      "axios": {
+        "commonjs": "axios",
+        "commonjs2": "axios",
+        "amd": "axios",
+        "root": "axios"
+      },
+      "tapable": {
+        "commonjs": "tapable",
+        "commonjs2": "tapable",
+        "amd": "tapable"
+      }
+    }
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "tapable": "^2.2.0"
+  }
+}
