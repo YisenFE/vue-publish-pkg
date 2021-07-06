@@ -1,0 +1,33 @@
+.ys-overflow-tooltip {
+    &.is-light {
+        border: none;
+    }
+
+    min-height: 0;
+    max-width: 374px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    background: #fff;
+    color: #333;
+    opacity: 1;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+    top: 0;
+
+    &[x-placement^="bottom"] {
+        transform: translateY(-6px);
+
+        .popper__arrow {
+            border-bottom-color: rgb(245, 245, 245) !important;
+        }
+    }
+
+    &[x-placement^="top"] {
+        transform: translateY(6px);
+
+        .popper__arrow {
+            border-top-color: #e0e0e0 !important;
+        }
+    }
+}

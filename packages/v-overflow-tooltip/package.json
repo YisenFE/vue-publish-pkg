@@ -1,0 +1,28 @@
+{
+  "name": "@ys/v-overflow-tooltip",
+  "version": "0.0.0-alpha.0",
+  "description": "@ys/v-overflow-tooltip",
+  "main": "index.js",
+  "keywords": [
+    "v-overflow-tooltip",
+    "overflow-tooltip"
+  ],
+  "author": "shiyisen",
+  "license": "MIT",
+  "buildOptions": {
+    "externals": {
+      "vue": {
+        "root": "Vue",
+        "commonjs": "vue",
+        "commonjs2": "vue",
+        "amd": "vue"
+      },
+      "element-ui": {
+        "root": "ELEMENT",
+        "commonjs": "ELEMENT",
+        "commonjs2": "ELEMENT",
+        "amd": "ELEMENT"
+      }
+    }
+  }
+}
