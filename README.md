@@ -25,7 +25,9 @@ packages
 在开发组件包时，`package.json` 的 `dependencies` 中不需要定义以下公共依赖：
 - `vue@2.6.11`
 - `element-ui@2.12.0`
-- `tapable@^2.2.0`
+
+> **内置公共依赖包**指的是你的项目基于`vue@2.6.11`、`element-ui@2.12.0`开发，所以在开发npm包给你的项目使用时不需要在npm包中定义`dependencies`依赖
+> 当然，如果要提供给其他可能不是这些前置依赖的项目，你需要在`dependencies`声明，并且打包时指定排除这些依赖
 
 ## 开始
 
@@ -58,16 +60,13 @@ mkdir pkg-demo
 ```sh
 cd pkg-demo
 yarn init -y
-# 假如包依赖vue@2.6.11、element-ui@2.12.0、axios@^0.19.0
-# vue、element-ui已是公共依赖，不需要安装
-yarn add axios@^0.19.0
 ```
 
 假如pkg-demo依赖`vue@2.6.11`、`element-ui@2.12.0`、`axios@^0.19.0`
 
 由于vue、element-ui已是公共依赖，所以不需要安装
 
-<a href="#项目内置公共依赖包">查看公共依赖</a>
+<a href="#内置公共依赖包">查看公共依赖</a>
 
 ```sh
 yarn add axios@^0.19.0
@@ -237,6 +236,12 @@ git push
 ```sh
 # 执行release时，一定要保证工作区干净，本地无任何改动
 git pull --rebase
+
+# 登录npm帐号
+yarn npm login
+# 确保已经登录
+yarn npm whoami
+
 # release脚本自动发包，提交代码
 yarn release --targetVersion 0.0.0-alpha.0 --tag alpha
 # 然后复制评审链接，评审合入仓库
