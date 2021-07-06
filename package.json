@@ -1,0 +1,87 @@
+{
+  "name": "vue-publish-pkg",
+  "private": true,
+  "version": "0.0.0-alpha.0",
+  "description": "爱番番业务组件包",
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "url": "https://github.com/YisenFE/vue-publish-pkg"
+  },
+  "scripts": {
+    "preinstall": "node ./scripts/checkYarn.js",
+    "serve": "cross-env NODE_ENV=development node scripts/runServer.js",
+    "build": "cross-env NODE_ENV=production node scripts/runBuild.js",
+    "release": "node scripts/runRelease.js",
+    "commit": "cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "lint": "eslint ."
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog",
+      "maxHeaderWidth": "50"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint",
+    "*.{css,less,scss,styl}": "stylelint"
+  },
+  "engines": {
+    "node": ">=12 <14 || 14.2 - 14.9 || >14.10.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.7",
+    "@babel/eslint-plugin": "^7.14.5",
+    "@ecomfe/eslint-config": "^7.1.0",
+    "@ecomfe/stylelint-config": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "autoprefixer": "^10.2.6",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "commander": "^8.0.0",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "element-ui": "2.12.0",
+    "enquirer": "^2.3.6",
+    "eslint": "^7.30.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "execa": "^5.1.1",
+    "html-webpack-plugin": "^5.3.2",
+    "lint-staged": "^11.0.0",
+    "mini-css-extract-plugin": "^2.1.0",
+    "portfinder": "^1.0.28",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "semver": "^7.3.5",
+    "stylelint": "^13.13.1",
+    "tapable": "^2.2.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "vue": "2.6.11",
+    "vue-loader": "^15.9.7",
+    "vue-router": "^3.5.2",
+    "vue-template-compiler": "2.6.11",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0",
+    "yorkie": "^2.0.0"
+  }
+}
