@@ -6,7 +6,7 @@ const webpack = require('webpack');
 readDone.tapPromise('filter childProjects', async childProjects => {
     if (argv.includes.length && !argv.release) {
         return argv.includes.reduce((arr, name) => {
-            const target = childProjects.find(w => w.name === `@ys/${name}`);
+            const target = childProjects.find(w => w.name === `@ysv/${name}`);
             if (target) {
                 arr.push(target);
             }

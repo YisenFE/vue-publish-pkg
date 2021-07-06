@@ -1,7 +1,7 @@
 {
-  "name": "@ys/v-click-outside",
+  "name": "@ysv/v-click-outside",
   "version": "0.0.0-alpha.0",
-  "description": "@ys/v-click-outside",
+  "description": "@ysv/v-click-outside",
   "main": "index.js",
   "keywords": [
     "v-click-outside",

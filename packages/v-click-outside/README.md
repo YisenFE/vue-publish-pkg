@@ -1,11 +1,11 @@
-# @ys/v-click-outside(目前仅提供内测版本)
+# @ysv/v-click-outside(目前仅提供内测版本)
 
 当目标元素以外的东西被点击时，v-click-outside 指令会调用指定的函数。
 
 ## Install
 
 ```bash
-$ yarn add @ys/v-click-outside@alpha
+$ yarn add @ysv/v-click-outside@alpha
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ $ yarn add @ys/v-click-outside@alpha
 
 ```js
 import Vue from 'vue';
-import PluginClickOutside from '@ys/v-click-outside';
+import PluginClickOutside from '@ysv/v-click-outside';
 Vue.use(PluginClickOutside);
 ```
 
@@ -24,7 +24,7 @@ Vue.use(PluginClickOutside);
 
 ```js
 import Vue from 'vue';
-import {ClickOutside} from '@ys/v-click-outside';
+import {ClickOutside} from '@ysv/v-click-outside';
 Vue.directive('click-outside', ClickOutside);
 ```
 

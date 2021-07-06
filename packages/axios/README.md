@@ -1,11 +1,11 @@
-# @ys/axios(目前仅提供内测版本)
+# @ysv/axios(目前仅提供内测版本)
 
 基于axios二次封装
 
 ## Install
 
 ```bash
-$ yarn add @ys/axios@alpha
+$ yarn add @ysv/axios@alpha
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ main.js:
 
 ```js
 import Vue from 'vue';
-import { request } from '@ys/axios';
+import { request } from '@ysv/axios';
 Vue.prototype.$axios = request;
 ```
 
@@ -24,7 +24,7 @@ Vue.prototype.$axios = request;
 
 ```js
 import Vue from 'vue';
-import { baseRequest } from '@ys/axios';
+import { baseRequest } from '@ysv/axios';
 
 baseRequest.hooks..beforeRequesttap('请求之前', (config) => {
     // ...

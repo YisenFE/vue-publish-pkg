@@ -1,7 +1,7 @@
 {
-  "name": "@ys/v-overflow-tooltip",
+  "name": "@ysv/v-overflow-tooltip",
   "version": "0.0.0-alpha.0",
-  "description": "@ys/v-overflow-tooltip",
+  "description": "@ysv/v-overflow-tooltip",
   "main": "index.js",
   "keywords": [
     "v-overflow-tooltip",

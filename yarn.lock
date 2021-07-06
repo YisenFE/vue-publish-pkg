@@ -926,9 +926,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ys/axios@workspace:packages/axios":
+"@ysv/axios@workspace:packages/axios":
   version: 0.0.0-use.local
-  resolution: "@ys/axios@workspace:packages/axios"
+  resolution: "@ysv/axios@workspace:packages/axios"
   dependencies:
     axios: ^0.21.1
     tapable: ^2.2.0
@@ -936,15 +936,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ys/v-click-outside@workspace:packages/v-click-outside":
+"@ysv/v-click-outside@workspace:packages/v-click-outside":
   version: 0.0.0-use.local
-  resolution: "@ys/v-click-outside@workspace:packages/v-click-outside"
+  resolution: "@ysv/v-click-outside@workspace:packages/v-click-outside"
   languageName: unknown
   linkType: soft
 
-"@ys/v-overflow-tooltip@workspace:packages/v-overflow-tooltip":
+"@ysv/v-overflow-tooltip@workspace:packages/v-overflow-tooltip":
   version: 0.0.0-use.local
-  resolution: "@ys/v-overflow-tooltip@workspace:packages/v-overflow-tooltip"
+  resolution: "@ysv/v-overflow-tooltip@workspace:packages/v-overflow-tooltip"
   languageName: unknown
   linkType: soft
 

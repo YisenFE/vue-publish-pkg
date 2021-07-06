@@ -1,4 +1,4 @@
-# @ys/v-overflow-tooltip(目前仅提供内测版本)
+# @ysv/v-overflow-tooltip(目前仅提供内测版本)
 
 当目标元素内容超出元素后，鼠标hover显示tooltip展示元素全部内容
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-$ yarn add @ys/v-overflow-tooltip@alpha
+$ yarn add @ysv/v-overflow-tooltip@alpha
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ $ yarn add @ys/v-overflow-tooltip@alpha
 
 ```js
 import Vue from 'vue';
-import PluginOverflowTooltip from '@ys/v-overflow-tooltip';
+import PluginOverflowTooltip from '@ysv/v-overflow-tooltip';
 Vue.use(PluginOverflowTooltip);
 ```
 
@@ -26,7 +26,7 @@ Vue.use(PluginOverflowTooltip);
 
 ```js
 import Vue from 'vue';
-import {OverflowTooltip} from '@ys/v-overflow-tooltip';
+import {OverflowTooltip} from '@ysv/v-overflow-tooltip';
 Vue.directive('overflow-tooltip', OverflowTooltip);
 ```
 
@@ -53,7 +53,7 @@ Vue.directive('overflow-tooltip', OverflowTooltip);
 
 ```js
 import Vue from 'vue';
-import PluginOverflowTooltip from '@ys/v-overflow-tooltip/dist/index.js';
+import PluginOverflowTooltip from '@ysv/v-overflow-tooltip/dist/index.js';
 Vue.use(PluginOverflowTooltip);
 ```
 
