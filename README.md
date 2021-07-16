@@ -32,7 +32,7 @@ packages
 
 ## 开始
 
-此项目使用 node 12+ 版本、 [yarn workspaces](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)。
+此项目使用 node `^12.13.0 || >=14.0.0` 版本、 [yarn workspaces](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)。
 
 满足上述配置要求后，克隆此代码库并运行 `yarn install`。
 
