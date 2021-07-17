@@ -21,12 +21,7 @@ const devConfig = {
                     chunks: 'all',
                     priority: -20,
                     test: /[\\/]node_modules[\\/]/,
-                    name(module) {
-                        return module.rawRequest;
-                    },
-                    filename: () => {
-                        return `vendor-[name].js`;
-                    },
+                    name: 'vendor',
                 },
             },
         },

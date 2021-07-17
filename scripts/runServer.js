@@ -116,7 +116,7 @@ function reporter(middlewareOptions, options, uri) {
                 log.error(statsString);
             }
             else if (stats.hasWarnings()) {
-                log.warn(statsString);
+                // log.warn(statsString);
             }
             else {
                 log.info(statsString);
